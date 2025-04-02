@@ -1,0 +1,128 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1743554062423
+  modified: 1743554062423
+collection:
+  - url: http://localhost:8080/
+    name: create game
+    meta:
+      id: req_5f4bfc7d39da4771a99fe050f0cf6dc3
+      created: 1743554200153
+      modified: 1743554617095
+      isPrivate: false
+      sortKey: -1743554200153
+    method: POST
+    body:
+      mimeType: application/json
+      text: >
+        {
+          "title": "The Witcher 3: Wild Hunt",
+          "genre": "RPG",
+          "platform": "PC, PS4, Xbox One",
+          "publisher": "CD Projekt Red",
+          "releaseyear": 2015,
+          "rating": 9.8,
+          "description": "A journey of Geralt of Rivia as he searches for his adopted daughter in a vast open world full of quests and danger."
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games
+    name: get game
+    meta:
+      id: req_92cad71a3d684872a8c213ca56c8c046
+      created: 1743554460231
+      modified: 1743554676962
+      isPrivate: false
+      sortKey: -1743554460231
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games/1
+    name: del game
+    meta:
+      id: req_5e24f42beb9a420499767c4c09e05ed2
+      created: 1743554473828
+      modified: 1743554669986
+      isPrivate: false
+      sortKey: -1743554473828
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games/2
+    name: put game
+    meta:
+      id: req_6f2885edc38645b8bcaf76e4bd9ed946
+      created: 1743554687185
+      modified: 1743554752073
+      isPrivate: false
+      sortKey: -1743554687185
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >
+        {
+          "title": "The Witcher 3: Wild Hunt",
+          "genre": "RPG",
+          "platform": "PC, PS4, Xbox One",
+          "publisher": "CD Projekt Red",
+          "releaseyear": 2015,
+          "rating": 10,
+          "description": "A journey of Geralt of Rivia as he searches for his adopted daughter in a vast open world full of quests and danger."
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1743554194894
+    modified: 1743554194894
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1743554194708
+    modified: 1743554194708
+    isPrivate: false
